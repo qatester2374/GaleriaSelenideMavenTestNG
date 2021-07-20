@@ -324,4 +324,7 @@ public class MainTest {
         System.out.println(spinner.size());
     }
 
+    void test() {
+
+    }
 }
