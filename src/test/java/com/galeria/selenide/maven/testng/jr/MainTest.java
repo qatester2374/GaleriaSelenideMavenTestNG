@@ -44,6 +44,7 @@ public class MainTest {
     SelenideElement findStore = $(byXpath("//input[@placeholder='Find store']"));
 //    ElementsCollection stores = $$("div .kMuqUv");
     ElementsCollection stores = $$("div .kMuqUv .gFlvGi");
+    SelenideElement closeFiliale = $(byXpath("//html/body/div[2]"));
 
     // registration
     SelenideElement name = $(byId("jform_name"));
@@ -210,6 +211,12 @@ public class MainTest {
 //        JSONObject jsonObject1 = new JSONObject(localStorage().getItem("site"));
 //        Assert.assertTrue(firstItem1.equals(jsonObject1.getJSONObject("favoriteStore").get("name")));
         assertCookieName("Krefeld");
+
+        localStorage().clear();
+
+        closeFiliale.click();
+        refresh();
+        Assert.assertEquals(localStorage().getItem("site"), null);
 
         Thread.sleep(4000);
     }
