@@ -320,5 +320,6 @@ public class MainTest {
 
     void test() {
         System.out.println("main");
+        System.out.println("second");
     }
 }
