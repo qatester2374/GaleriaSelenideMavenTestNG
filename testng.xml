@@ -5,7 +5,7 @@
         <classes>
             <class name="com.galeria.selenide.maven.testng.jr.MainTest">
                 <methods>
-                    <include name="todoMvc"/>
+                    <include name="todoGaleria"/>
 <!--                    <include name="register"/>-->
 <!--                    <include name="login"/>-->
 <!--                    <include name="uploadImage1"/>-->

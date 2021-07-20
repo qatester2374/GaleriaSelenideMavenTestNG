@@ -111,7 +111,7 @@ public class MainTest {
     }
 
     @Test
-    void todoMvc() throws InterruptedException {
+    void todoGaleria() throws InterruptedException {
 //        open("https://www.galeria.de/");
         open("https://galeria.stage.galeria.bestbytes.net/", "", "demo", "dfLr8dY7e7ZJJmtqwAJtVQZiGHNiUZ9gNssMjK4rHTFFaTeUd6");
         open("https://galeria.stage.galeria.bestbytes.net/");
