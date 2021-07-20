@@ -189,28 +189,12 @@ public class MainTest {
 
         filiale.click();
 
-//        findStore.sendKeys("Berlin");
-//        findStore.pressEnter();
-//        String firstItem = stores.get(0).getText();
-//        System.out.println("Stores 1st item: " + firstItem);
-//        stores.get(0).click();
-//        System.out.println("LOCAL STORAGE: " + localStorage().getItem("site"));
-//        JSONObject jsonObject = new JSONObject(localStorage().getItem("site"));
-//        Assert.assertTrue(firstItem.equals(jsonObject.getJSONObject("favoriteStore").get("name")));
-        assertCookieName("Berlin");
+        localStorageAssert("Berlin");
 
         andern.shouldBe(Condition.visible);
         andern.click();
 
-//        findStore.sendKeys("Krefeld");
-//        findStore.pressEnter();
-//        String firstItem1 = stores.get(0).getText();
-//        System.out.println("Stores 1st item: " + firstItem1);
-//        stores.get(0).click();
-//        System.out.println("LOCAL STORAGE1: " + localStorage().getItem("site"));
-//        JSONObject jsonObject1 = new JSONObject(localStorage().getItem("site"));
-//        Assert.assertTrue(firstItem1.equals(jsonObject1.getJSONObject("favoriteStore").get("name")));
-        assertCookieName("Krefeld");
+        localStorageAssert("Krefeld");
 
         localStorage().clear();
 
@@ -221,7 +205,7 @@ public class MainTest {
         Thread.sleep(4000);
     }
 
-    void assertCookieName(String term) {
+    void localStorageAssert(String term) {
         findStore.sendKeys(term); // Krefeld
         findStore.pressEnter();
         String firstItem = stores.get(0).getText();
