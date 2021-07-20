@@ -4,20 +4,14 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.json.JSONObject;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
-
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class MainTest {
 
@@ -206,7 +200,7 @@ public class MainTest {
     }
 
     void localStorageAssert(String term) {
-        findStore.sendKeys(term); // Krefeld
+        findStore.sendKeys(term); // Krefeld term
         findStore.pressEnter();
         String firstItem = stores.get(0).getText();
         System.out.println("Stores 1st item: " + firstItem);
