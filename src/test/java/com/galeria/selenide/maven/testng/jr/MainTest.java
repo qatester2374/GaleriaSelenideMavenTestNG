@@ -319,6 +319,6 @@ public class MainTest {
     }
 
     void test() {
-        System.out.println("second branch");
+        System.out.println("main");
     }
 }
