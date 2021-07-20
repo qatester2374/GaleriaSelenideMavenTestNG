@@ -319,6 +319,10 @@ public class MainTest {
     }
 
     void test() {
-        System.out.println("main");
+<<<<<<< HEAD
+        System.out.println("merge");
+=======
+        System.out.println("merge");
+>>>>>>> second
     }
 }
