@@ -40,7 +40,7 @@ public class MainTest {
     SelenideElement lastPageNumbers = $(byClassName("gkk-pop-pagination__nav-pages"));
     ElementsCollection lastPageNumbersElements = $$("ul .gkk-pop-pagination__nav-pages-item");
     SelenideElement filiale = $(byXpath("//span[contains(text(), 'Filiale')]"));
-    SelenideElement andern = $(byXpath("//button[contains(text(), 'Ändern')]"));
+    SelenideElement andern = $(byXpath("//button[contains(text(), 'ndern')]"));
     SelenideElement findStore = $(byXpath("//input[@placeholder='Find store']"));
 //    ElementsCollection stores = $$("div .kMuqUv");
     ElementsCollection stores = $$("div .kMuqUv .gFlvGi");
